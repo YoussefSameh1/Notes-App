@@ -11,7 +11,7 @@ class NotesListView extends StatelessWidget {
     NoteModel note = NoteModel(
       title: 'Flutter tips',
       subTitle: 'Build your future with tharwat samy',
-      date: DateTime.now().toString().substring(0, 9),
+      date: DateTime.now().toString().substring(0, 10),
       color: 0xff6BE4D4,
     );
     return ListView.builder(

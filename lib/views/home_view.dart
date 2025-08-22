@@ -11,11 +11,11 @@ class HomeView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-            context: context,
-            builder: (context) => const AddNoteBottomSheet(),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
+            context: context,
+            builder: (context) => const AddNoteBottomSheet(),
           );
         },
         backgroundColor: Colors.lightGreen,

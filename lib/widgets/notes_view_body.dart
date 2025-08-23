@@ -4,14 +4,14 @@ import 'package:notes_app/cubits/notes_cubit/cubit/notes_cubit.dart';
 import 'package:notes_app/widgets/custom_app_bar.dart';
 import 'package:notes_app/widgets/notes_list_view.dart';
 
-class HomeViewBody extends StatefulWidget {
-  const HomeViewBody({super.key});
+class NotesViewBody extends StatefulWidget {
+  const NotesViewBody({super.key});
 
   @override
-  State<HomeViewBody> createState() => _HomeViewBodyState();
+  State<NotesViewBody> createState() => _NotesViewBodyState();
 }
 
-class _HomeViewBodyState extends State<HomeViewBody> {
+class _NotesViewBodyState extends State<NotesViewBody> {
 
   @override
   void initState() {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/add_note_bottom_sheet.dart';
-import 'package:notes_app/widgets/home_view_body.dart';
+import 'package:notes_app/widgets/notes_view_body.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class NotesView extends StatelessWidget {
+  const NotesView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
         backgroundColor: Colors.lightGreen,
         child: const Icon(Icons.add, color: Colors.black, size: 30),
       ),
-      body: HomeViewBody(),
+      body: NotesViewBody(),
     );
   }
 }

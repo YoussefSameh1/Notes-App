@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class CustomIcon extends StatelessWidget {
-   CustomIcon({super.key, required this.icon});
+  const CustomIcon({super.key, required this.icon, this.onPressed});
 
-  IconData icon;
+  final IconData icon;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CustomIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(icon, color: Colors.white, size: 30),
       ),
     );
